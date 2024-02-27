@@ -36,6 +36,11 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+.my-italic{
+    color: rebeccapurple;
+    text-decoration: underline
+}
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -325,7 +330,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #50E200;
 }
 
 .section-title h2::after {
@@ -334,8 +339,8 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
-  bottom: 0;
+  background: #dd7214;
+  bottom: -1;
   left: 0;
 }
 
