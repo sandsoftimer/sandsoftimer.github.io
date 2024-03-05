@@ -468,7 +468,10 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #A01010;
+    
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 
 /*--------------------------------------------------------------
