@@ -1,96 +1,756 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Tabbed Content</title>
-<style>
-  body { font-family: sans-serif; text-align: center; } /* Center body text */
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  /* Tab Container */
-  .tab-container {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    margin-bottom: 20px;
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  }
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  /* Tab Buttons */
-  .tab-button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    margin: 0 5px;
-  }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  .tab-button:hover {
-    background-color: #ddd;
-  }
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  .tab-button.active {
-    background-color: #007bff;
-    color: white;
-  }
-
-  /* Tab Content */
-  .tab-content {
-    display: none; /* Hidden by default */
-    padding: 20px;
-    border: 1px solid #ccc;
-    text-align: left; /* Content itself left-aligned within its box */
-    max-width: 800px; /* Limit width for readability */
-    margin: 0 auto; /* Center the content block */
-  }
-
-  .tab-content h2 {
-    text-align: center; /* Center headings within the content */
-  }
-</style>
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
 
-<!-- Tab Buttons -->
-<div class="tab-container">
-  <button class="tab-button" onclick="openTab(event, 'Home')">Home</button>
-  <button class="tab-button" onclick="openTab(event, 'PrivacyPolicy')">Privacy Policy</button>
-</div>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-<!-- Tab Content -->
-<div id="Home" class="tab-content">
-  <h2>Welcome Alhostly!</h2>
-</div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-<div id="PrivacyPolicy" class="tab-content">
-  <h2>Our Privacy Policy</h2>
-  <p>This section explains how we handle your data. All content is easily readable.</p>
-  <p>We respect your privacy!</p
-</div>
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Imran Hossain</a></h1>
+        <div class="social-links mt-3 text-center">
+<!--
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+-->
+          <a href="https://www.linkedin.com/in/sandsoftimer/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>          
+          <a href="https://www.facebook.com/md.imran.hossain.902" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+        </div>
+      </div>
 
-<script>
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  // Get all elements with class="tab-content" and hide them
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  // Get all elements with class="tab-button" and remove the active class
-  tablinks = document.getElementsByClassName("tab-button");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// Open the first tab by default
-document.getElementById("Home").style.display = "block";
-document.querySelector(".tab-button").className += " active";
-</script>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-brain"></i> <span>Skills</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-car"></i> <span>Memories</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Some of my projects are illustrated below. Fill free to click for more details.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Action">Action</li>
+              <li data-filter=".filter-Simulation">Simulation</li>
+              <li data-filter=".filter-Idle_Arcade">Idle Arcade</li>
+              <li data-filter=".filter-Puzzle">Puzzle</li>
+              <li data-filter=".filter-Racing">Racing</li>
+              <li data-filter=".filter-Adventure">Adventure</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Puzzle">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Hole_Jam/details_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Hole_Jam/details_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hole Jam"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-holeJam.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Adventure">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Disco_Club/details_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Disco_Club/details_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Disco Club"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-discoClub.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Puzzle">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Wool_Jam/details_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Wool_Jam/details_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Wool Jam"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-woolJam.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Adventure filter-Puzzle">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Elemental_Legend/details_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Elemental_Legend/details_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Elemental Legend"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-elementallegend.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Adventure">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/DDD/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/DDD/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Deep Dive Delicacious"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-ddd.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Idle_Arcade filter-Racing">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Real_Road_Rush/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Real_Road_Rush/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Real Road Rush"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-rrr.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Simulation filter-Idle_Arcade">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Pawnshop/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Pawnshop/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pawnshop Master"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-pawnshop.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Idle_Arcade filter-Racing">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Runna_Wey/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Runna_Wey/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runna Wey!"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-runnawey.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Action filter-Racing">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Race_Against_Train/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Race_Against_Train/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Race Agains Train"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-raceagainstrain.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Simulation filter-Idle_Arcade">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/My_Mini_Club/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/My_Mini_Club/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My Mini Club"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-myminiclub.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Racing">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Gem_Painting/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Gem_Painting/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gem Painting"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-gempainting.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Action">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Gang_Starts/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Gang_Starts/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gang Stars"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-gangstars.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Simulation filter-Idle_Arcade">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/My_Mini_Merge/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/My_Mini_Merge/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My Mini Merge"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-myminimerge.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Simulation filter-Idle_Arcade filter-Puzzle">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Crime_Time/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Crime_Time/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Crime Time"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-crimetime.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Simulation filter-Idle_Arcade">
+            <div class="portfolio-wrap" style="">
+              <img src="assets/portfolio/Mc_Stealth/detail_1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/portfolio/Mc_Stealth/detail_1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MC Stealth"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-mcstealth.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+            
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>With 14 years dedicated to Unity development, I am a game architect who builds for the long run. My code is grounded in the principles of SOLID and KISS, ensuring every system is robust, scalable, and a pleasure to maintain.
+I am a firm believer in the power of collaboration, thriving within Scrum and Agile frameworks to deliver continuous value.
+My strength lies in a unique blend of engineering and creative polish: I leverage Generative AI coding for dynamic mechanics and use my skills in Photoshop and Audio editing to ensure a cohesive, high-quality final product. I don't just write code; I craft experiences.
+This version is approximately half the length of the original, focusing on impact and key differentiators.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/FB_PIC.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h5 style="color:black;"><img src="assets/img/Unity.svg" width="100px" > <b>Game Programmer</b></h5>
+            <p class="fst-italic">
+              I am enthusiastic about C# programming and eager to learn from others. I have passions such as rapid prototyping, improving gameplay feel, performance optimization, reusable, and reliable code, and so on.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>23 Sep 1988</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.sandsoftimer.github.io</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+880 1777 159 708</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>DHAKA, BANGLADESH</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>35</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSc in Computer Science and Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sandsoftimer@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Designation:</strong> <span>Principle Programmer</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Right now, I am working full-time at a gaming studio based in Singapore called 'Kolpoverse Studios'.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Throughout my 14+ year career, I have worked on numerous hyper and hybrid casual projects and prototypes. Millions of users are playing my games all over the world. I have provided and received support to and from others. Additionally, I have had the opportunity to lead some of my projects.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Million Happy Users</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="369" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects & Prototypes</strong> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Team Collaboration</strong></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+            <p>
+                I have gathered a wealth of experience throughout my career in areas such as C#, Unity Game Engine, UI/UX design, creating smooth game controls and feel, data structures, optimized algorithms, design patterns, Mixamo rigs and animations, Photoshop texturing, UI elements, communication and collaboration via Slack, project management using Trello, version control with Git using Github, Sourcetree, and Bitbucket, familiarity with Atlassian suite, Microsoft Visual Studio, Audacity audio editor, PHP, MySQL, Javascript, HTML, CSS, WordPress, ActionScript, Flash, experience with publisher SDKs such as Supersonic, Homa, Lion Studio, and Moonee, as well as skills in swimming, driving, outdoor activities, blockchain, Shader Graph, HLSH, Blender, Mixamo, Photoshop, Photopia, and more.
+            </p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">C# & Unity <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Mixamo Rigs & Animations, Photoshop Texturing, UI Elements <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Data Structure, Optimized Algorithm, Design Patterns <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Slack, Trello, Github, Sourcetree, Bitbucket, Atlassian <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+                
+            <div class="progress">
+              <span class="skill">Audacity Audio Editor <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+              
+            <div class="progress">
+              <span class="skill">PHP, MySql, Javascript, HTML, CSS, Wordpress, ActionScript, Flash <i class="val">35%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+          </div>            
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>At the beginning of my career, I started my journey in the game industry, and I have stuck with it ever since. I have a genuine love for gaming and game development, a passion that has remained strong throughout. During my internship, I focused on Flash Game Development using ActionScript 3.0. As an innovative and deadline-driven Game Programmer with over 14 years of experience, I specialize in designing and developing user-centered games from initial sketching to final publishing.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+              
+            <div class="resume-item">                
+              <h4>Principal Programmer</h4>
+              <h5 class="Date">Nov 2022 - Present</h5>
+              <p><em>Kolpoverse Studios, Dhaka, Bangladesh</em></p>
+              <p><em>Full-time Hybrid Job (3 days from Home, 2 days from Office) </em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+            <div class="resume-item">                
+              <h4>Sr. Game Programmer</h4>
+              <h5 class="Date">Jan 2020 - Nov 2022</h5>
+              <p><em>Alpha Potato, Dhaka, Bangladesh</em></p>
+              <p><em>Full-time Job</em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+            <div class="resume-item">                
+              <h4>Unity Game Mentor</h4>
+              <h5 class="Date">Dec 2016 - Dec 2017</h5>
+              <p><em>Bangladesh Couputer Council, Dhaka, Bangladesh</em></p>
+              <p><em>Lead Teacher (Weekly 5 days, each day 4 hours) </em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+            <div class="resume-item">                
+              <h4>Sr. Game Programmer</h4>
+              <h5 class="Date">Nov 2016 - May 2019</h5>
+              <p><em>Rise Up Labs, Dhaka, Bangladesh</em></p>
+              <p><em>Full-time Unity Developer</em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+            <div class="resume-item">                
+              <h4>Jr. Mobile Game developer</h4>
+              <h5 class="Date">Sep 2015 - Oct 2016</h5>
+              <p><em>Sky Corporation, Dhaka, Bangladesh</em></p>
+              <p><em>Full-time Unity Developer</em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+            <div class="resume-item">                
+              <h4>Jr. Game Programmer</h4>
+              <h5 class="Date">May 2015 - Aug 2015</h5>
+              <p><em>Encrypto, Dhaka, Bangladesh</em></p>
+              <p><em>Full-time Unity Developer</em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+            <div class="resume-item">                
+              <h4>Entry Level Game Developer</h4>
+              <h5 class="Date">Nov 2011 - Feb 2015</h5>
+              <p><em>Buzz Bangla LTD, Dhaka, Bangladesh</em></p>
+              <p><em>Full-time Game Developer</em></p>
+              <!--<ul>
+                <li>Lead in the design, development, and implementation</li>
+              </ul>-->                
+            </div>
+              
+          </div>
+            
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bsc in Computer Science &amp; Engineering</h4>
+              <h5 class="Date">2007 - 2011</h5>
+              <p><em>Stamford University Bangladesh, Dhaka, Shiddeshori</em></p>
+              <p><em>4 Years Bechelor Degree</em></p>
+              <p><em>CGPA: 3.17 out of 4</em></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Memories</h2>
+          <p>These are fond memories, including participation in ACM ICPC, East-West IUPC, teaching a Professional Diploma in Game Development, farewells, and so on.</p>
+        </div>
+
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/action_egg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Action Egg is my first puzzle-based game about 100+ levels in 2012">
+                    <img class="Memories portfolio-links" src="assets/img/memories/action_egg.jpg">
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/BuzzBangla.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Buzz Bangla - My first mobile game development started here in 2012.">
+                    <img class="Memories portfolio-links" src="assets/img/memories/BuzzBangla.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/diploma_Game.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dear students are giving me some gifts - ICT Division (Professional Diploma in Game Development)">
+                    <img class="Memories portfolio-links" src="assets/img/memories/diploma_Game.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/fair_well.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Farewell Ceremony - ICT Division (Professional Diploma in Game Development)">
+                    <img class="Memories portfolio-links" src="assets/img/memories/fair_well.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/game_diploma_ceremoney.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Professional Diploma in Game Development - Opening Ceremony">
+                    <img class="Memories portfolio-links" src="assets/img/memories/game_diploma_ceremoney.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/Innovasion_Forum.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Speaking about Augmented Reality - Bangladesh Innovation Forum">
+                    <img class="Memories portfolio-links" src="assets/img/memories/Innovasion_Forum.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/IT_FEST.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="IT FEST Challenge Ceremony - Stamford University">
+                    <img class="Memories portfolio-links" src="assets/img/memories/IT_FEST.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/IT_FEST_Price.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="IT FEST prize giving ceremony - Stamford University">
+                    <img class="Memories portfolio-links" src="assets/img/memories/IT_FEST_Price.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/IUPC.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="IUPC programming contest - Bangladesh Chin Moitri">
+                    <img class="Memories portfolio-links" src="assets/img/memories/IUPC.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/Riseuplabs.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Celebrating Halloween Party at Office - Riseup Labs">
+                    <img class="Memories portfolio-links" src="assets/img/memories/Riseuplabs.jpg">
+                </a>
+              </div>
+            </div>            
+         
+            
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200" style="text-align: center">
+              <div class="portfolio-links">
+                <a href="assets/img/memories/NSU_ICPC.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ICPC programming contest day - North South University">
+                    <img class="Memories portfolio-links" src="assets/img/memories/NSU_ICPC.jpg">
+                </a>
+              </div>
+            </div>                     
+            
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>These are some of my achievements</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Working with Imran has been an absolute pleasure. His attention to detail and passion for creating immersive worlds shines through in every aspect of his games. It's evident he truly care about the player experience.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/masha.jpg" class="testimonial-img" alt="">
+                <h3>Masha Mustakim</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  As a long-time fan of Imran Hossain, I can confidently say he consistently deliver top-notch games. His commitment to innovation and pushing the boundaries of storytelling in gaming is commendable.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/najmul_goni.jpg" class="testimonial-img" alt="">
+                <h3>Najmul Goni</h3>
+                <h4>Director</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I've had the privilege of collaborating with Imran (The Sandsoftimer) on a project, and I was blown away by His expertise and professionalism. He has a deep understanding of game design principles and know how to execute them flawlessly.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/amikichai.jpg" class="testimonial-img" alt="">
+                <h3>Amiki Chi</h3>
+                <h4>Enterpreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Playing games developed by Imran Hossain is always a treat. His creativity knows no bounds, and he has a knack for creating addictive gameplay mechanics that keep me coming back for more.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/kazi.jpg" class="testimonial-img" alt="">
+                <h3>Kazi Obaidul Alam</h3>
+                <h4>Director</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  What sets Imran apart from others in the industry is his genuine care for his community. He actively listen to player feedback and continuously strive to improve his games, making him a developer I trust and admire.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/kasu.jpg" class="testimonial-img" alt="">
+                <h3>Talha Bin Husain</h3>
+                <h4>Director</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Hello there, I am only available on Linkedin & Occasionally on Facebook. So, drop a message on Linkedin or you can e-mail me at "sandsoftimer@gmail.com"</p>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; | &copy; <strong><span></span></strong>          
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+         <a href="https://www.coolfreecv.com/">_---_</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
